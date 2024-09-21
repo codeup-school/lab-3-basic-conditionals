@@ -1,6 +1,6 @@
 # Lab: Introducción a los Condicionales en JavaScript
 
-Este laboratorio está diseñado para ayudarte a practicar el uso de condicionales en JavaScript. A lo largo de estos tres ejercicios, vas a implementar decisiones lógicas que cambiarán el comportamiento del código en función de las condiciones que definas.
+Este laboratorio te ayudará a practicar el uso de condicionales en JavaScript. A lo largo de estos ejercicios, escribirás código que toma decisiones lógicas en función de condiciones específicas.
 
 ## Requisitos previos
 
@@ -14,88 +14,117 @@ Antes de comenzar este laboratorio, asegúrate de tener los siguientes conocimie
 
 ## Ejercicio 1: Verificar si un número es positivo, negativo o cero
 
-En este ejercicio, escribirás una función que tome un número como entrada y determine si es positivo, negativo o cero.
+En este ejercicio, escribirás código que determine si un número es positivo, negativo o cero.
 
 ### Instrucciones
 
-1. Crea una función llamada `verificarNumero`.
-2. Esta función debe tomar un parámetro llamado `numero` (un número).
-3. Dentro de la función, utiliza condicionales para verificar si el número es:
-   - Positivo: si el número es mayor que 0.
-   - Negativo: si el número es menor que 0.
-   - Cero: si el número es igual a 0.
-4. Muestra un mensaje en la consola con el resultado, como por ejemplo:
+1. Declara una variable llamada `numero` y asígnale un valor numérico, por ejemplo:
+   ```javascript
+   let numero = 5;
+   ```
+2. Usa una estructura condicional para verificar si el número es:
+   - Positivo (mayor que 0).
+   - Negativo (menor que 0).
+   - Cero (igual a 0).
+3. Muestra un mensaje en la consola con el resultado, como:
    - "El número es positivo"
    - "El número es negativo"
    - "El número es cero"
 
-### Pista
+### Ejemplo de código
 
-Recuerda que puedes usar `if`, `else if` y `else` para manejar los tres posibles casos.
+```javascript
+let numero = 5;
+
+if (numero > 0) {
+  console.log("El número es positivo");
+} else if (numero < 0) {
+  console.log("El número es negativo");
+} else {
+  console.log("El número es cero");
+}
+```
 
 ### Ejemplo de salida
 
-```javascript
-verificarNumero(5); // Debería mostrar "El número es positivo"
-verificarNumero(-3); // Debería mostrar "El número es negativo"
-verificarNumero(0); // Debería mostrar "El número es cero"
+```
+El número es positivo
 ```
 
 ---
 
 ## Ejercicio 2: ¿Es un mayor de edad?
 
-En este ejercicio, escribirás una función que verifique si una persona es mayor de edad según su edad.
+En este ejercicio, escribirás código que verifique si una persona es mayor de edad según su edad.
 
 ### Instrucciones
 
-1. Crea una función llamada `esMayorDeEdad`.
-2. La función debe tomar un parámetro llamado `edad` (un número).
-3. Si la `edad` es 18 o mayor, muestra en la consola: "Eres mayor de edad".
-4. Si la `edad` es menor de 18, muestra en la consola: "Eres menor de edad".
+1. Declara una variable llamada `edad` y asígnale un valor numérico, por ejemplo:
+   ```javascript
+   let edad = 20;
+   ```
+2. Si la `edad` es 18 o mayor, muestra en la consola: "Eres mayor de edad".
+3. Si la `edad` es menor de 18, muestra en la consola: "Eres menor de edad".
 
-### Pista
+### Ejemplo de código
 
-Utiliza un condicional para verificar si la edad es mayor o igual a 18.
+```javascript
+let edad = 20;
+
+if (edad >= 18) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres menor de edad");
+}
+```
 
 ### Ejemplo de salida
 
-```javascript
-esMayorDeEdad(20); // Debería mostrar "Eres mayor de edad"
-esMayorDeEdad(16); // Debería mostrar "Eres menor de edad"
+```
+Eres mayor de edad
 ```
 
 ---
 
 ## Ejercicio 3: Validar una contraseña
 
-En este ejercicio, crearás una función que valide si una contraseña ingresada coincide con la contraseña correcta.
+En este ejercicio, escribirás código que valide si una contraseña ingresada coincide con la contraseña correcta.
 
 ### Instrucciones
 
-1. Crea una función llamada `validarContrasena`.
-2. La función debe tomar un parámetro llamado `contrasena` (una cadena de texto).
-3. Define dentro de la función una variable llamada `contrasenaCorrecta` y asígnale un valor, como por ejemplo `"123456"`.
-4. Si `contrasena` es igual a `contrasenaCorrecta`, muestra en la consola: "Contraseña correcta".
-5. Si `contrasena` no coincide con `contrasenaCorrecta`, muestra en la consola: "Contraseña incorrecta".
+1. Declara una variable llamada `contrasena` y asígnale una cadena de texto, como por ejemplo:
+   ```javascript
+   let contrasena = "123456";
+   ```
+2. Declara otra variable llamada `contrasenaCorrecta` y asígnale un valor, como `"123456"`.
+3. Si `contrasena` es igual a `contrasenaCorrecta`, muestra en la consola: "Contraseña correcta".
+4. Si `contrasena` no coincide con `contrasenaCorrecta`, muestra en la consola: "Contraseña incorrecta".
 
-### Pista
+### Ejemplo de código
 
-Recuerda que para comparar cadenas de texto, puedes utilizar el operador `===`.
+```javascript
+let contrasena = "123456";
+let contrasenaCorrecta = "123456";
+
+if (contrasena === contrasenaCorrecta) {
+  console.log("Contraseña correcta");
+} else {
+  console.log("Contraseña incorrecta");
+}
+```
 
 ### Ejemplo de salida
 
-```javascript
-validarContrasena("123456"); // Debería mostrar "Contraseña correcta"
-validarContrasena("abcdef"); // Debería mostrar "Contraseña incorrecta"
+```
+Contraseña correcta
 ```
 
 ---
 
 ## Notas adicionales
 
-- Asegúrate de probar cada función varias veces con diferentes valores de entrada.
-- Si algo no funciona como esperabas, revisa la sintaxis de tus condicionales y verifica que estés comparando los valores correctamente.
-- Usa `console.log()` para ver los resultados de tus pruebas.
+- Asegúrate de probar cada ejercicio con diferentes valores para verificar que tu código funcione correctamente.
+- Si algo no funciona como esperabas, revisa la lógica de tus condicionales y cómo estás comparando los valores.
+- Usa `console.log()` para ver los resultados de tus pruebas y depurar tu código si es necesario.
 
-¡Buena suerte y diviértete programando!
+¡Buena suerte y disfruta programando con condicionales!
